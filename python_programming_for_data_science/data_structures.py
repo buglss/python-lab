@@ -137,4 +137,55 @@ long_str
 # String (Karakter Dizisi) Metodları
 #############################################################################
 
-# BURADAN DEVAM 0008
+dir(int) # hangi metodların olduğunu listeler
+dir(str)
+dir("foo")
+
+########################
+# len
+########################
+
+name = "John"
+type(name) # str
+type(len) # builtin_function_or_method (builtins.py)
+
+len(name) # 4
+
+########################
+# Fonksiyon class yapısı içerisinde tanımlıysa metod, değilse fonksiyondur.
+########################
+
+########################
+# upper() & lower(): küçük-büyük dönüşümleri.
+########################
+
+"buglss".upper() # BUGLSS
+"BUGLSS".lower() # buglss
+
+# type(upper) # NameError: name 'upper' is not defined
+
+########################
+# replace: karakter değiştirir.
+########################
+
+hi = "Hello AI Era"
+hi.replace("l", "p") # 'Heppo AI Era'
+
+########################
+# split: böler.
+########################
+
+"Hello AI Era".split() # ['Hello', 'AI', 'Era']
+
+########################
+# strip: kırpar.
+########################
+
+" ofofo ".strip() # 'ofofo'
+"ofofo".strip("o") # 'fof'
+
+########################
+# capitalize: ilk harfi büyütür.
+########################
+
+"foo".capitalize() # 'Foo'
